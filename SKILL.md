@@ -1,6 +1,6 @@
 ---
 name: personalbrandhelper
-description: Turn long, messy personal updates, voice-note transcripts, journals, weekly recaps, wins, failures, frustrations, and observations into a paired personal-brand package containing one hook-led, three-sentence X/Twitter post and one longer, spoken-natural story suitable as both a social post and a HeyGen AI-avatar script. Use when extracting emotional, authentic content from noisy first-person source material.
+description: Turn long, messy personal updates, voice-note transcripts, journals, weekly recaps, wins, failures, frustrations, and observations into a paired personal-brand package written in simple fourth-grade English, containing one hook-led, three-sentence X/Twitter post and one longer, spoken-natural story suitable as both a social post and a HeyGen AI-avatar script. Use when extracting emotional, authentic content from noisy first-person source material.
 ---
 
 # Personal Brand Helper
@@ -14,6 +14,7 @@ Turn raw life and work updates into posts people can feel. Optimize for honest r
 - Find the one emotionally charged moment inside the update instead of summarizing everything.
 - Prefer specificity, tension, surprise, vulnerability, and a real change in perspective over generic advice.
 - Preserve the user's language, rhythm, humor, slang, and level of intensity. Keep tasteful rough edges that make the writing sound spoken rather than manufactured.
+- Write all original copy in very simple, natural English at about a fourth-grade reading level.
 - Make the user look human, not heroic. Let achievements earn attention through stakes, struggle, or meaning rather than self-congratulation.
 - Protect privacy and agency. Omit or anonymize confidential details, private third parties, minors, medical information, and identifying facts unless the user clearly asks to publish them.
 - Never use fabricated controversy, outrage bait, false urgency, or engagement bait.
@@ -122,6 +123,7 @@ Before answering, verify that:
 - the short block contains exactly three sentences and is no more than 280 characters;
 - the long block sounds natural aloud and fits the requested or default length;
 - both blocks tell the same supported story without contradicting each other;
+- both blocks use simple fourth-grade English without sounding childish;
 - both purpose titles are present and exact;
 - every draft paragraph appears inside an italicized Markdown blockquote.
 
@@ -134,6 +136,22 @@ Rewrite anything that fails.
 - Avoid polished AI habits such as “Here's the thing,” “Let that sink in,” “In today's fast-paced world,” “I'm thrilled to announce,” forced rule-of-three lists, fake dialogue, excessive em dashes, and repeated “not X, but Y” constructions.
 - Avoid clickbait labels such as “unpopular opinion,” “hard truth,” or “you won't believe” unless they are genuinely natural for the user.
 - Do not imitate a named living writer or creator. Capture requested high-level traits instead.
+
+## Plain-language standard
+
+Always write the two outputs in English that a typical fourth-grade student can understand. Keep the ideas adult and emotionally honest; make the words simple, not childish.
+
+- Prefer short, common, concrete words.
+- Use active voice and clear subject-verb-object sentences.
+- Put one main idea in each sentence.
+- Keep most sentences between 5 and 14 words. Split sentences that run longer than 18 words when meaning allows.
+- Prefer concrete verbs over abstract nouns.
+- Remove jargon, business buzzwords, academic terms, vague metaphors, complex idioms, and nested clauses.
+- Replace words such as “utilize,” “approximately,” “demonstrate,” and “assistance” with “use,” “about,” “show,” and “help.”
+- Keep an exact quote, proper name, number, or essential technical term when the story needs it. Explain an essential hard term in plain words.
+- Never flatten the user's emotion or make the user sound like a child.
+
+If a reading-level checker is available, target a U.S. fourth-grade level or easier. Treat the score as a check, then read the copy aloud and simplify anything that still feels hard.
 
 ## Clarification rules
 
