@@ -121,7 +121,9 @@ Before answering, verify that:
 - the ending adds meaning instead of summarizing the post;
 - the short block contains exactly three sentences and is no more than 280 characters;
 - the long block sounds natural aloud and fits the requested or default length;
-- both blocks tell the same supported story without contradicting each other.
+- both blocks tell the same supported story without contradicting each other;
+- both purpose titles are present and exact;
+- every draft paragraph appears inside an italicized Markdown blockquote.
 
 Rewrite anything that fails.
 
@@ -149,22 +151,35 @@ When the source has no usable emotional center, ask: “Which single moment from
 
 ## Output contract
 
-Return exactly two copy-ready text blocks. Do not return a transcript summary, content-strategy lecture, labels, headings, rationale, private scoring, chain-of-thought, or revision offer.
+Return exactly two titled, copy-ready visual blocks. Do not return a transcript summary, content-strategy lecture, extra labels, rationale, private scoring, chain-of-thought, or revision offer.
 
 Use this exact response shape:
 
 ```markdown
-***
-[Strong hook sentence]
+## Short text — X / Twitter post
 
-[Second sentence]
+> *[Strong hook sentence]*
+>
+> *[Second sentence]*
+>
+> *[Third sentence]*
 
-[Third sentence]
 ***
-[Longer hook-led social post and HeyGen script]
+
+## Long text — social post or HeyGen AI-avatar script
+
+> *[Strong hook paragraph]*
+>
+> *[Following paragraph]*
+>
+> *[Continue each paragraph in the same format]*
 ```
 
-Put `***` on its own line before the short block and between the two blocks. Do not add a closing separator after the long block. Do not put either draft in quotation marks.
+Use the two titles exactly as written so each output's possible purpose is immediately clear. Put `***` on its own line between the two titled blocks. Do not add a closing separator after the long block.
+
+Render every content paragraph as an italicized Markdown blockquote: prefix content lines with `>` and wrap each paragraph in single asterisks. Use a quoted blank line (`>`) between paragraphs. Keep titles and the separator outside the blockquotes. Do not add literal quotation marks around either draft.
+
+Count only the visible three-sentence post text toward the X/Twitter 280-character limit; do not count the title or Markdown presentation markers.
 
 ## Quality example
 
