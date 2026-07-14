@@ -1,0 +1,4 @@
+interface:
+  display_name: "Personal Brand Helper"
+  short_description: "Turn messy life updates into authentic social posts"
+  default_prompt: "Use $personalbrandhelper to turn this raw update into short posts for X and LinkedIn."
