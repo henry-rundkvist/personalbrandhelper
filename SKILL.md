@@ -1,6 +1,6 @@
 ---
 name: personalbrandhelper
-description: Turn long, messy personal updates, voice-note transcripts, journals, weekly recaps, wins, failures, frustrations, and observations into short, emotional, authentic social posts with strong sharing potential. Use when drafting or extracting personal-brand content, hooks, post ideas, X/Twitter posts, LinkedIn posts, Threads posts, or captions from noisy first-person source material.
+description: Turn long, messy personal updates, voice-note transcripts, journals, weekly recaps, wins, failures, frustrations, and observations into a paired personal-brand package containing one hook-led, three-sentence X/Twitter post and one longer, spoken-natural story suitable as both a social post and a HeyGen AI-avatar script. Use when extracting emotional, authentic content from noisy first-person source material.
 ---
 
 # Personal Brand Helper
@@ -65,11 +65,13 @@ Rank each candidate from 0 to 3 on:
 - meaningful change or payoff;
 - fit with the user's natural voice.
 
-Penalize vagueness, unsupported inference, privacy risk, cruelty, empty self-promotion, and lessons that were not earned by the source. Choose the strongest one or two moments. Keep the ranking private unless requested.
+Penalize vagueness, unsupported inference, privacy risk, cruelty, empty self-promotion, and lessons that were not earned by the source. Choose the single strongest moment unless the user explicitly requests different source angles. Keep the ranking private unless requested.
 
-### 4. Draft the post
+### 4. Draft both versions
 
-Build each draft around one idea:
+Build both drafts around the same strongest idea and factual core:
+
+Draft at least three hook candidates privately before writing the rest. Choose the shortest truthful hook that exposes a concrete tension, reversal, surprise, or admission. Make it grammatical, easy to understand in isolation, and strong enough to create curiosity without vague clickbait. Do not cram the setup, conflict, and payoff into one overloaded sentence.
 
 1. Open on the sharpest concrete truth, scene, admission, or tension.
 2. Add only the context needed to understand why it mattered.
@@ -80,30 +82,31 @@ Use at least one concrete detail when the source contains one. Prefer short sent
 
 Do not force a moral. A vivid unresolved moment can be stronger than a lesson.
 
-### 5. Adapt to the platform
+### 5. Create the two required formats
 
-Follow an explicitly requested platform, length, count, language, tone, and format.
+Always produce both formats after the source supports an accurate story, even if the user mentions only one platform.
 
-For X/Twitter:
+For the short X/Twitter text:
 
-- Keep each standalone post within the hard limit of 280 characters unless the user asks for a thread or long post.
-- Count every character in the final draft, including spaces and line breaks. If no reliable counter is available, target 240 characters or fewer to leave margin.
-- Put the strongest line first.
-- Use line breaks only when they improve rhythm.
-- Use no hashtags by default and at most one when genuinely useful.
-- Use at most one emoji unless the user's voice clearly uses more.
-- Avoid requests for likes, reposts, replies, or follows.
+- Write exactly three complete sentences.
+- Put each sentence in its own paragraph, with one blank line between sentences.
+- Make the first sentence a very strong, truthful hook.
+- Use the second sentence to add tension, a concrete detail, or the emotional turn.
+- Use the third sentence to land the payoff, unresolved truth, or earned observation.
+- Keep the entire three-sentence block within the hard limit of 280 characters.
+- Count every character, including spaces and line breaks. If no reliable counter is available, target 240 characters or fewer to leave margin.
+- Use no hashtags by default, at most one emoji, and no request for likes, reposts, replies, or follows.
 
-For LinkedIn:
+For the longer social post and HeyGen AI-avatar script:
 
-- Default to 60–160 words.
-- Make the first one or two lines work before the “see more” break.
-- Use short paragraphs and one clear emotional arc.
-- Use no hashtags by default and at most two when genuinely useful.
-- Remove corporate jargon, résumé language, and ceremonial announcements.
-- End with a real observation, not a forced audience question.
-
-For Threads, Instagram, or another network, preserve the same factual core while matching that platform's natural length and conversational style. Do not merely copy the LinkedIn version.
+- Default to 120–200 words, or roughly 50–80 seconds when spoken naturally. Follow an explicit requested duration or length when provided.
+- Open with a very strong, truthful hook that works both on screen and when spoken aloud.
+- Deepen the same story used in the short version with necessary context, concrete details, tension, emotional change, and an earned ending.
+- Write in natural spoken language with short, breath-friendly paragraphs and varied sentence length.
+- Make the text usable unchanged as a social post and as an avatar voice script.
+- Do not include stage directions, camera instructions, timestamps, bullet lists, headings, hashtags, or visual-only formatting inside the text.
+- Avoid awkward spoken punctuation, dense parentheticals, jargon, and sentences that sound written rather than said.
+- End with a memorable observation or emotional landing, not a forced audience question or engagement request.
 
 ### 6. Run the human test
 
@@ -116,7 +119,9 @@ Before answering, verify that:
 - the post preserves the user's voice rather than a generic creator voice;
 - no private or risky detail slipped through;
 - the ending adds meaning instead of summarizing the post;
-- all platform limits are satisfied.
+- the short block contains exactly three sentences and is no more than 280 characters;
+- the long block sounds natural aloud and fits the requested or default length;
+- both blocks tell the same supported story without contradicting each other.
 
 Rewrite anything that fails.
 
@@ -132,9 +137,7 @@ Rewrite anything that fails.
 
 Do not ask questions when the source already supports a strong, accurate post.
 
-If the platform is unspecified, default to both X and LinkedIn. If the desired quantity is unspecified, provide two distinct angles per platform, strongest first.
-
-If the source supports only one honest angle, provide one strong draft per requested platform instead of padding the answer with repetitive variants.
+Do not ask which platform to target. The required output is always one X/Twitter-formatted short text and one longer social-post/HeyGen script.
 
 Ask at most one focused question before drafting only when:
 
@@ -146,40 +149,35 @@ When the source has no usable emotional center, ask: “Which single moment from
 
 ## Output contract
 
-Return copy-ready drafts, not a transcript summary or a content-strategy lecture.
+Return exactly two copy-ready text blocks. Do not return a transcript summary, content-strategy lecture, labels, headings, rationale, private scoring, chain-of-thought, or revision offer.
 
-Label each section by platform and angle in a few words. Do not put drafts in quotation marks. Do not expose private scoring or chain-of-thought. Do not add explanations, hashtags, calls to action, or revision offers unless useful or requested.
-
-When defaulting to both platforms, use this shape:
+Use this exact response shape:
 
 ```markdown
-## X — [angle]
+***
+[Strong hook sentence]
 
-[post]
+[Second sentence]
 
-## X — [second angle]
-
-[post]
-
-## LinkedIn — [angle]
-
-[post]
-
-## LinkedIn — [second angle]
-
-[post]
+[Third sentence]
+***
+[Longer hook-led social post and HeyGen script]
 ```
 
-If the user asks for “the best post,” “one post,” or “just the post,” return only the strongest copy-ready draft for the requested platform with no heading or commentary.
+Put `***` on its own line before the short block and between the two blocks. Do not add a closing separator after the long block. Do not put either draft in quotation marks.
 
 ## Quality example
 
-Prefer a supported, concrete line such as:
+Prefer a supported, concrete short post such as:
 
-> Our demo died in front of the one customer we needed to impress. Twelve hours later, they became our first paying customer.
+> Our demo died 30 seconds in.
+>
+> We explained exactly what broke and fixed it that night.
+>
+> The next day, the customer said our honesty built trust—and signed.
 
 over a generic summary such as:
 
 > This week reminded me that resilience and perseverance are the keys to success.
 
-The first version creates a scene, tension, and an emotional turn. Apply that principle without reusing its wording or inventing a similarly neat outcome.
+The first version creates a scene, tension, and an emotional turn in exactly three sentences. Apply that principle without reusing its wording or inventing a similarly neat outcome.
