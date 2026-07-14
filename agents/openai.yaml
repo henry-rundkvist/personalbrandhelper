@@ -1,4 +1,4 @@
 interface:
   display_name: "Personal Brand Helper"
-  short_description: "Create X posts and avatar-ready story scripts"
-  default_prompt: "Use $personalbrandhelper to turn this raw update into a three-sentence X post and a longer avatar-ready story."
+  short_description: "Create simple X posts and avatar-ready scripts"
+  default_prompt: "Use $personalbrandhelper to turn this raw update into an X post and avatar-ready story in simple fourth-grade English."
